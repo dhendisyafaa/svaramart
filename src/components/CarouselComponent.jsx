@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Zoom } from 'react-slideshow-image'
+import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
 const CarouselComponent = (props) => {
@@ -16,6 +16,7 @@ const CarouselComponent = (props) => {
         duration: 5000,
         transitionDuration: 500,
         infinite: true,
+        canSwipe: true,
         prevArrow: (
             <div className='group-hover:-ml-3 w-7 h-7 rounded-full flex justify-center items-center group-hover:bg-navy bg-[#1f3c4246] duration-300'>
                 <svg width={24} height={24} fill="none">
@@ -46,13 +47,13 @@ const CarouselComponent = (props) => {
 
     return (
         <div className='group'>
-            <Zoom {...zoomInProperties}>
+            <Slide {...zoomInProperties}>
                 {images.map((each, index) => (
                     <div key={index} className='w-full h-40'>
                         <img src={each} alt="carousel" className='w-full h-40 object-cover rounded-lg shadow-md' />
                     </div>
                 ))}
-            </Zoom>
+            </Slide>
         </div>
     )
 }
