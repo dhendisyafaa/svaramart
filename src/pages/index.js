@@ -2,6 +2,7 @@ import CarouselComponent from '@/components/CarouselComponent'
 import CategoryComponent from '@/components/CategoryComponent'
 import Layout from '@/components/Layout'
 import SearchBar from '@/components/SearchBar'
+import ButtonSmall from '@/components/button/ButtonSmall'
 import CardProduct from '@/components/cards/CardProduct'
 import BagIcon from '@/components/logo/BagIcon'
 import { Inter } from '@next/font/google'
@@ -35,8 +36,9 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col gap-3'>
-          <div className='flex'>
+          <div className='flex items-center justify-between'>
             <p className='font-semibold text-sm'>Produk di sekitarmu!</p>
+            <ButtonSmall innerText="Lihat Semua"/>
           </div>
           <div className='flex gap-2 pr-5 overflow-x-scroll scrollbar-hide py-3 rounded-lg'>
             <CardProduct />
