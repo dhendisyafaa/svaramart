@@ -1,6 +1,5 @@
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
-import styles from '../styles/Carousel.module.css'
 
 const CarouselComponent = () => {
 
