@@ -1,18 +1,32 @@
-import Image from 'next/image'
-import React from 'react'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
+import styles from '../styles/Carousel.module.css'
 
-const CarouselComponent = (props) => {
+const CarouselComponent = () => {
 
     const images = [
         '/images/carousel/carousel-1.png',
         '/images/carousel/carousel-2.png',
     ]
 
-    const zoomInProperties = {
-        indicator: true,
-        scale: 1.2,
+    // const indicators = (index) => (<button className="indicator w-2 h-2">
+    //     <style jsx>{`
+    //         .indicator {
+    //             cursor: pointer;
+    //             margin-right: 5px;
+    //             background-color: #8E8E8E;
+    //             border-radius: 50%;
+    //         }
+            
+    //         .indicator.active {
+    //             color: #fff;
+    //             background: #1F3C42;
+    //         }
+    //     `}</style>
+    //     </button>);
+
+    const slideProperties = {
+        // indicators: true,
         duration: 5000,
         transitionDuration: 500,
         infinite: true,
@@ -32,7 +46,7 @@ const CarouselComponent = (props) => {
         ),
         nextArrow: (
             <div className='group-hover:-mr-3 w-7 h-7 rounded-full flex justify-center items-center group-hover:bg-navy bg-[#1f3c4246] duration-300'>
-                <svg width={24} height={24} fill="none" {...props}>
+                <svg width={24} height={24} fill="none">
                     <path
                         d="M9 6l6 6-6 6"
                         stroke="#fff"
@@ -47,7 +61,9 @@ const CarouselComponent = (props) => {
 
     return (
         <div className='group'>
-            <Slide {...zoomInProperties}>
+            {/* for indicators */}
+            {/*  indicators={indicators} */}
+            <Slide {...slideProperties}>
                 {images.map((each, index) => (
                     <div key={index} className='w-full h-40'>
                         <img src={each} alt="carousel" className='w-full h-40 object-cover rounded-lg shadow-md' />
