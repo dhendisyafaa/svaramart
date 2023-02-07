@@ -8,7 +8,7 @@ import NavbarComponent from '@/components/navbar/NavbarComponent'
 
 const promo = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden h-[2000px]'>
       <SimpleHeader titleHeader="Promo" />
       <CarouselFull />
       <div className='mt-6'>
