@@ -20,7 +20,7 @@ const promo = () => {
           <CardPromo />
         </div>
         <div className='px-5 text-navy font-bold text-md mt-8 mb-4'>
-          <p className='uppercase'>Voucher Gratis Ongkir Mingguan</p>
+          <p className='uppercase'>Kupon dari toko</p>
         </div>
         <div className='mx-5 flex gap-2 mt-5 overflow-x-scroll scrollbar-hide py-2 px-2 w-[1000px]'>
           <CouponComponent />
