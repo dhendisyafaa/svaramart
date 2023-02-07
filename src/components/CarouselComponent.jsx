@@ -44,7 +44,7 @@ const CarouselComponent = () => {
             </div>
         ),
         nextArrow: (
-            <div className='group-hover:-mr-3 w-7 h-7 rounded-full flex justify-center items-center group-hover:bg-navy bg-[#1f3c4246] duration-300'>
+            <div className='group-hover:-mr-3 w-7 h-7 rounded-full flex justify-center items-center group-hover:bg-navy bg-[#90a3a734] duration-300'>
                 <svg width={24} height={24} fill="none">
                     <path
                         d="M9 6l6 6-6 6"
