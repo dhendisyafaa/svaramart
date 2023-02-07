@@ -1,9 +1,10 @@
-import CarouselComponent from '@/components/CarouselComponent'
 import CategoryComponent from '@/components/CategoryComponent'
+import CouponComponent from '@/components/CouponComponent'
 import Layout from '@/components/Layout'
 import SearchBar from '@/components/SearchBar'
 import ButtonSmall from '@/components/button/ButtonSmall'
 import CardProduct from '@/components/cards/CardProduct'
+import CarouselComponent from '@/components/carousel/CarouselComponent'
 import BagIcon from '@/components/logo/BagIcon'
 import { Inter } from '@next/font/google'
 
