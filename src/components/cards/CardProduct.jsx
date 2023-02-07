@@ -3,7 +3,7 @@ import React from 'react'
 import photoProduct from '../../../public/images/product/img-product.png'
 import { Menu } from '@headlessui/react'
 
-const CardProduct = () => {
+const CardProduct = () => {        
     return (
         <div className='w-fit shadow-md rounded-lg'>
             <Image
@@ -63,9 +63,9 @@ const CardProduct = () => {
                 <Menu>
                     <Menu.Button className="absolute bottom-2 right-2">
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 8.125C7.84518 8.125 8.125 7.84518 8.125 7.5C8.125 7.15482 7.84518 6.875 7.5 6.875C7.15482 6.875 6.875 7.15482 6.875 7.5C6.875 7.84518 7.15482 8.125 7.5 8.125Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M11.875 8.125C12.2202 8.125 12.5 7.84518 12.5 7.5C12.5 7.15482 12.2202 6.875 11.875 6.875C11.5298 6.875 11.25 7.15482 11.25 7.5C11.25 7.84518 11.5298 8.125 11.875 8.125Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M3.125 8.125C3.47018 8.125 3.75 7.84518 3.75 7.5C3.75 7.15482 3.47018 6.875 3.125 6.875C2.77982 6.875 2.5 7.15482 2.5 7.5C2.5 7.84518 2.77982 8.125 3.125 8.125Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.5 8.125C7.84518 8.125 8.125 7.84518 8.125 7.5C8.125 7.15482 7.84518 6.875 7.5 6.875C7.15482 6.875 6.875 7.15482 6.875 7.5C6.875 7.84518 7.15482 8.125 7.5 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M11.875 8.125C12.2202 8.125 12.5 7.84518 12.5 7.5C12.5 7.15482 12.2202 6.875 11.875 6.875C11.5298 6.875 11.25 7.15482 11.25 7.5C11.25 7.84518 11.5298 8.125 11.875 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M3.125 8.125C3.47018 8.125 3.75 7.84518 3.75 7.5C3.75 7.15482 3.47018 6.875 3.125 6.875C2.77982 6.875 2.5 7.15482 2.5 7.5C2.5 7.84518 2.77982 8.125 3.125 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                     </Menu.Button>
                     <Menu.Items className="bg-white rounded-t-xl fixed bottom-0 z-50 left-0 w-full h-[20%] border flex flex-col gap-3 px-3 py-6 font-light text-xs shadow-[2px_0px_20px_0px_rgba(0,0,0,0.25)]">
