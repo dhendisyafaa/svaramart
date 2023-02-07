@@ -1,10 +1,17 @@
 import React from 'react'
+import gratong from '../../public/images/icon/gratis-ongkir.png'
+import Image from 'next/image'
 
 const VoucherComponent = () => {
     return (
         <div className='flex justify-between items-center pr-5 border'>
             <div className='flex gap-3 items-center'>
-                <img src="" alt="gratis ongkir" className='w-24 h-20 bg-navy' />
+                <Image
+                    src={gratong}
+                    width={96}
+                    height={88}
+                    alt='gratis ongkir'
+                />
                 <div>
                     <p className='text-[10px] text-grey -mb-1'>Min. Transaksi</p>
                     <p className='font-bold text-lg'>Rp150.000</p>
