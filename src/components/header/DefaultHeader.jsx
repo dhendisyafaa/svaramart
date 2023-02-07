@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const DefaultHeader = () => {
   return (
-    <div className='flex justify-between bg-navy px-5 py-5'>
+    <div className='flex justify-between bg-navy px-5 py-4'>
       <SvaraMartText />
       <div className='flex items-center gap-1'>
         <Link href='/notification'>
