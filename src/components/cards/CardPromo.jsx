@@ -5,7 +5,7 @@ import photoProduct from '../../../public/images/product/img-product.png'
 
 const CardPromo = () => {
     return (
-        <div className='w-fit shadow-md rounded-lg'>
+        <div className='w-fit shadow rounded-lg'>
             <div>
                 <Image
                     src={photoProduct}

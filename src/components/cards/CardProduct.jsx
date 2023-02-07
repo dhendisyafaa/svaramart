@@ -5,7 +5,7 @@ import { Menu } from '@headlessui/react'
 
 const CardProduct = () => {
     return (
-        <div className='w-fit shadow-md rounded-lg'>
+        <div className='w-fit shadow rounded-lg'>
             <Image
                 src={photoProduct}
                 className='w-36 h-36 rounded-t-lg'
