@@ -3,7 +3,7 @@ import React from 'react'
 import photoProduct from '../../../public/images/product/img-product.png'
 import { Menu } from '@headlessui/react'
 
-const CardProduct = () => {        
+const CardProduct = () => {
     return (
         <div className='w-fit shadow-md rounded-lg'>
             <Image
@@ -17,19 +17,20 @@ const CardProduct = () => {
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
-                        <svg width={15} height={15} fill="none">
+                        <svg width={10} height={10} fill="none">
                             <g
-                                clipPath="url(#prefix__clip0_17_87)"
+                                clipPath="url(#prefix__clip0_46_1445)"
                                 stroke="#1F3C42"
-                                strokeWidth={2}
+                                strokeWidth={1.5}
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                             >
-                                <path d="M5.625 13.75a.625.625 0 100-1.25.625.625 0 000 1.25zM12.5 13.75a.625.625 0 100-1.25.625.625 0 000 1.25zM.625.625h2.5L4.8 8.994A1.25 1.25 0 006.05 10h6.075a1.25 1.25 0 001.25-1.006l1-5.244H3.75" />
+                                <path d="M8.75 4.167C8.75 7.083 5 9.583 5 9.583s-3.75-2.5-3.75-5.416a3.75 3.75 0 017.5 0z" />
+                                <path d="M5 5.417a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
                             </g>
                             <defs>
-                                <clipPath id="prefix__clip0_17_87">
-                                    <path fill="#fff" d="M0 0h15v15H0z" />
+                                <clipPath id="prefix__clip0_46_1445">
+                                    <path fill="#fff" d="M0 0h10v10H0z" />
                                 </clipPath>
                             </defs>
                         </svg>
