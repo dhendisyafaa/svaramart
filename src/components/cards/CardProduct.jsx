@@ -21,7 +21,7 @@ const CardProduct = ({title, price, imageProduct}) => {
                     <div className='mb-1'>
                         <p className='text-[10px] leading-3'>{title}</p>
                     </div>
-                    <p className='font-bold text-xs'>$ {price}</p>
+                    <p className='font-bold text-xs'>Rp{(price*15000).toLocaleString()}</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
