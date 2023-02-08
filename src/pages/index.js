@@ -24,11 +24,11 @@ export default function Home() {
           </div>
           <CategoryComponent />
         </div>
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col'>
           <div>
             <p className='font-semibold text-sm'>Produk terakhir dilihat</p>
           </div>
-          <div className='flex gap-2 pr-5 overflow-x-scroll scrollbar-hide py-3 rounded-lg'>
+          <div className='flex gap-2 overflow-x-scroll scrollbar-hide py-3'>
             <CardProduct />
             <CardProduct />
             <CardProduct />
@@ -36,12 +36,12 @@ export default function Home() {
             <CardProduct />
           </div>
         </div>
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col'>
           <div className='flex items-center justify-between'>
             <p className='font-semibold text-sm'>Produk di sekitarmu!</p>
             <ButtonSmall innerText="Lihat Semua"/>
           </div>
-          <div className='flex gap-2 pr-5 overflow-x-scroll scrollbar-hide py-3 rounded-lg'>
+          <div className='flex gap-2 overflow-x-scroll scrollbar-hide py-3'>
             <CardProduct />
             <CardProduct />
             <CardProduct />
