@@ -5,11 +5,11 @@ import photoProduct from '../../../public/images/product/img-product.png'
 
 const CardPromo = () => {
     return (
-        <div className='w-fit shadow rounded-lg'>
+        <div className='w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
             <div>
                 <Image
                     src={photoProduct}
-                    className='w-36 h-36 rounded-t-lg'
+                    className='w-36 h-36 lg:w-full lg:h-full rounded-t-lg'
                 />
                 <div className='bg-navy rounded-br-lg pl-2 py-[2px]'>
                     <p className='font-bold text-[8px] text-white'>40% off</p>

@@ -5,10 +5,10 @@ import { Menu } from '@headlessui/react'
 
 const CardProduct = () => {
     return (
-        <div className='w-fit shadow rounded-lg'>
+        <div className='w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
             <Image
                 src={photoProduct}
-                className='w-36 h-36 rounded-t-lg'
+                className='w-36 h-36 lg:w-full lg:h-full rounded-t-lg'
             />
             <div className='py-[10px] px-2 w-36 flex flex-col gap-5 relative'>
                 <div className='flex flex-col gap-1'>
