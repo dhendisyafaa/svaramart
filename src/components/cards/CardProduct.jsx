@@ -3,7 +3,7 @@ import { Menu } from '@headlessui/react'
 const CardProduct = ({title, price, imageProduct}) => {
     // console.log(title)
     return (
-        <div className='w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
+        <div className='relative w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
             <div>
                 <img
                     src={imageProduct}
@@ -13,7 +13,7 @@ const CardProduct = ({title, price, imageProduct}) => {
                     className='w-36 h-36 lg:w-50 lg:h-50 rounded-t-lg'
                 />
             </div>
-            <div className='py-[10px] px-2 w-36 flex flex-col gap-5 relative'>
+            <div className='py-[10px] px-2 w-36 flex flex-col gap-5'>
                 <div className='flex flex-col'>
                     <div className='mb-1'>
                         <p className='text-[10px] leading-3'>{title}</p>
