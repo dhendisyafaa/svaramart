@@ -1,5 +1,4 @@
 import CategoryComponent from '@/components/CategoryComponent'
-import CouponComponent from '@/components/CouponComponent'
 import Layout from '@/components/Layout'
 import SearchBar from '@/components/SearchBar'
 import ButtonSmall from '@/components/button/ButtonSmall'
@@ -7,10 +6,31 @@ import CardProduct from '@/components/cards/CardProduct'
 import CarouselComponent from '@/components/carousel/CarouselComponent'
 import BagIcon from '@/components/icon/BagIcon'
 import { Inter } from '@next/font/google'
+import { useEffect, useState } from 'react'
+import { getAllProduct } from './api/product'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [allProduct, setAllProduct] = useState([])
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  const fetchData = async () => {
+    const products = await getAllProduct()
+    console.log(products)
+    setAllProduct(products)
+  }
+
+  const fetchDataDetails = async (id) => {
+    const products = await getProductDetail(id)
+    // console.log(products)
+    setAllProduct(products)
+  }
+
   return (
     <Layout>
       <div className='h-[1500px]'>
@@ -25,21 +45,34 @@ export default function Home() {
           <CategoryComponent />
         </div>
         <p className='font-semibold text-sm'>Produk terakhir dilihat</p>
-        <div className='flex gap-1 lg:gap-2 overflow-x-scroll scrollbar-hide py-3 mb-8'>
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
+        <div className='flex gap-1 lg:gap-2 overflow-x-scroll scrollbar-hide py-3 px-1 mb-8'>
+          {allProduct.map((product, id) => {
+            return (
+              <CardProduct
+                key={id}
+                title={product.title}
+                price={product.price}
+                imageProduct={product.image}
+              />
+            )
+          })}
         </div>
         <div className='flex items-center justify-between'>
           <p className='font-semibold text-sm'>Produk di sekitarmu!</p>
           <ButtonSmall innerText="Lihat Semua" />
         </div>
-        <div className='flex gap-1 lg:gap-2 overflow-x-scroll scrollbar-hide py-3'>
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
+        <div className='flex gap-1 lg:gap-2 overflow-x-scroll scrollbar-hide py-3 px-1 mb-8'>
+          {allProduct.map((product, id) => {
+            return (
+              <CardProduct
+                key={id}
+                title={product.title}
+                price={product.price}
+                imageProduct={product.image}
+                rating={product.rating.rate}
+              />
+            )
+          })}
         </div>
       </div>
     </Layout>
