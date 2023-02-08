@@ -3,21 +3,25 @@ import React from 'react'
 import photoProduct from '../../../public/images/product/img-product.png'
 import { Menu } from '@headlessui/react'
 
-const CardProduct = () => {
+const CardProduct = ({title, price, imageProduct, rating}) => {
+    // console.log(title)
     return (
         <div className='w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
             <div>
-                <Image
-                    src={photoProduct}
+                <img
+                    src={imageProduct}
+                    width={36}
+                    height={36}
+                    alt='photo-product'
                     className='w-36 h-36 lg:w-full lg:h-full rounded-t-lg'
                 />
             </div>
             <div className='py-[10px] px-2 w-36 flex flex-col gap-5 relative'>
                 <div className='flex flex-col'>
                     <div className='mb-1'>
-                        <p className='text-[10px] leading-3'>Navy Club Tas Ransel Kasual EBJ - Tas Pria Backpack</p>
+                        <p className='text-[10px] leading-3'>{title}</p>
                     </div>
-                    <p className='font-bold text-xs'>Rp. 309.000</p>
+                    <p className='font-bold text-xs'>{price}</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
@@ -60,7 +64,7 @@ const CardProduct = () => {
                                 />
                             </defs>
                         </svg>
-                        <p className='text-[10px] text-grey'>4.9</p>
+                        <p className='text-[10px] text-grey'>{rating}</p>
                         <span className='text-[10px] text-grey'>|</span>
                         <p className='text-[10px] text-grey'>Terjual 15rb</p>
                     </div>
