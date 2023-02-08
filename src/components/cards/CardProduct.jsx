@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import React from 'react'
-import photoProduct from '../../../public/images/product/img-product.png'
 import { Menu } from '@headlessui/react'
 
 const CardProduct = ({title, price, imageProduct}) => {
@@ -13,7 +10,7 @@ const CardProduct = ({title, price, imageProduct}) => {
                     width={36}
                     height={36}
                     alt='photo-product'
-                    className='w-36 h-36 lg:w-full lg:h-full rounded-t-lg'
+                    className='w-36 h-36 lg:w-50 lg:h-50 rounded-t-lg'
                 />
             </div>
             <div className='py-[10px] px-2 w-36 flex flex-col gap-5 relative'>
@@ -70,7 +67,7 @@ const CardProduct = ({title, price, imageProduct}) => {
                     </div>
                 </div>
                 <Menu>
-                    <Menu.Button className="absolute bottom-2 right-2 lg:-right-12">
+                    <Menu.Button className="absolute bottom-2 right-2">
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.5 8.125C7.84518 8.125 8.125 7.84518 8.125 7.5C8.125 7.15482 7.84518 6.875 7.5 6.875C7.15482 6.875 6.875 7.15482 6.875 7.5C6.875 7.84518 7.15482 8.125 7.5 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M11.875 8.125C12.2202 8.125 12.5 7.84518 12.5 7.5C12.5 7.15482 12.2202 6.875 11.875 6.875C11.5298 6.875 11.25 7.15482 11.25 7.5C11.25 7.84518 11.5298 8.125 11.875 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
