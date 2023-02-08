@@ -69,7 +69,7 @@ export default function Home() {
                 title={product.title}
                 price={product.price}
                 imageProduct={product.image}
-                rating={product.rating.rate}
+                // rating={product.rating.rate}
               />
             )
           })}
