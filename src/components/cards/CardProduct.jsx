@@ -3,7 +3,7 @@ import React from 'react'
 import photoProduct from '../../../public/images/product/img-product.png'
 import { Menu } from '@headlessui/react'
 
-const CardProduct = ({title, price, imageProduct, rating}) => {
+const CardProduct = ({title, price, imageProduct}) => {
     // console.log(title)
     return (
         <div className='w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
@@ -21,7 +21,7 @@ const CardProduct = ({title, price, imageProduct, rating}) => {
                     <div className='mb-1'>
                         <p className='text-[10px] leading-3'>{title}</p>
                     </div>
-                    <p className='font-bold text-xs'>{price}</p>
+                    <p className='font-bold text-xs'>$ {price}</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
@@ -64,7 +64,7 @@ const CardProduct = ({title, price, imageProduct, rating}) => {
                                 />
                             </defs>
                         </svg>
-                        <p className='text-[10px] text-grey'>{rating}</p>
+                        <p className='text-[10px] text-grey'>4.9</p>
                         <span className='text-[10px] text-grey'>|</span>
                         <p className='text-[10px] text-grey'>Terjual 15rb</p>
                     </div>
