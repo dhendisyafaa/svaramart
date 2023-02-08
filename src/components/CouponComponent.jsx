@@ -9,9 +9,18 @@ const CouponComponent = () => {
                 {/* <div className='shadow-[0px_0px_1px_0px_gray] w-8 h-8 absolute top-9' style={{ borderRadius: '0 150px 150px 0', left: '-15px' }}></div>
                 <div className='shadow-[0px_0px_1px_0px_gray] w-8 h-8 absolute  top-9' style={{ borderRadius: '150px 0 0 150px', right: '-15px' }}></div> */}
                 <div className='w-[70px] h-[70px]'>
-                    <Image src={makeover} alt="voucher-icon-shop" width={70} height={70}/>
+                    <Image src={makeover} alt="voucher-icon-shop" width={70} height={70} />
                 </div>
-                <div className='border-l-grey border border-dashed'></div>
+                <svg width={2} height={86} fill="none">
+                    <path
+                        d="M1 .55v85"
+                        stroke="#666"
+                        strokeOpacity={0.2}
+                        strokeWidth={2}
+                        strokeLinejoin="round"
+                        strokeDasharray="7 7"
+                    />
+                </svg>
                 <div className="flex flex-col gap-1 w-[150px]">
                     <div className="flex items-center gap-1">
                         <svg width={10} height={10} fill="none">
