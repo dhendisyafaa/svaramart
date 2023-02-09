@@ -11,6 +11,8 @@ import { getAllProduct } from './api/product'
 import DefaultHeader from '@/components/header/DefaultHeader'
 import NavbarComponent from '@/components/navbar/NavbarComponent'
 import LargeScreenHeader from '@/components/header/LargeScreenHeader'
+import { WishlistIcon } from '@/components/navbar/NavbarIcon'
+import ChatIcon from '@/components/icon/ChatIcon'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,18 +37,21 @@ export default function Home() {
   }
 
   return (
-    <>
+    <div className='bg-navy'>
       <div className='block lg:hidden'>
         <DefaultHeader />
       </div>
       <div className='hidden lg:block'>
         <LargeScreenHeader />
       </div>
-      <div className='px-5 py-5 lg:px-44'>
+      <div className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
         <div className='h-[1500px]'>
-          <div className='flex gap-2 items-center mb-5 lg:hidden'>
+          <div className='flex gap-4 items-center mb-5 lg:hidden'>
             <SearchBar />
-            <BagIcon color="#1F3C42" />
+            <div className='flex items-center gap-3'>
+              <ChatIcon color="#1F3C42" />
+              <BagIcon color="#1F3C42" />
+            </div>
           </div>
           <div className='mb-6'>
             <CarouselComponent />
@@ -87,6 +92,6 @@ export default function Home() {
         </div>
       </div>
       <NavbarComponent />
-    </>
+    </div>
   )
 }
