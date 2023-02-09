@@ -14,7 +14,7 @@ const promo = () => {
       <div className='h-[2000px] bg-navy'>
         <SimpleHeader titleHeader="Promo" />
         <div className='mt-12 bg-white'>
-          <div className='w-[324px] h-24 border mx-auto relative -top-9 rounded-lg bg-white shadow-lg flex justify-around items-center'>
+          <div className='w-[334px] h-24 border mx-auto relative -top-9 rounded-lg bg-white shadow-lg flex justify-around items-center'>
             <div className='text-center'>
               <Image
                 src={logoPromo}
@@ -40,10 +40,10 @@ const promo = () => {
               <p className='font-bold text-sm'>33 Kupon</p>
             </div>
           </div>
-          <div className='px-5 text-navy font-bold text-md mt-8 mb-4'>
+          <div className='px-5 text-navy font-bold text-md mb-4'>
             <p className='uppercase'>Kupon dari toko</p>
           </div>
-          <div className='mx-5 flex gap-2 mt-5 overflow-x-scroll scrollbar-hide py-3'>
+          <div className='mx-5 flex gap-2 overflow-x-scroll scrollbar-hide py-3'>
             <CouponComponent />
             <CouponComponent />
             <CouponComponent />
