@@ -10,7 +10,7 @@ const order = () => {
     return (
         <>
             <div className='bg-navy'>
-                <div className='w-full flex justify-end px-3 py-1'>
+                <div className='w-full flex justify-end px-3 pt-3'>
                     <HamburgerMenu />
                 </div>
                 <div className='flex items-center gap-2 px-5 pb-7'>
