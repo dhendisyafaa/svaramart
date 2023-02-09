@@ -105,7 +105,7 @@ const order = () => {
                                 </div>
                             </Tab.Panel>
                             <Tab.Panel>
-                                <div className='flex flex-col gap-5'>
+                                <div className='flex flex-col gap-5 h-[2000px]'>
                                     <RiwayatTransaksi/>
                                     <RiwayatTransaksi/>
                                     <RiwayatTransaksi/>
