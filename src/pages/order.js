@@ -47,7 +47,7 @@ const order = () => {
                                 classNames(
                                     '',
                                     selected
-                                        ? 'border-b-navy border-b-2 font-medium'
+                                        ? 'border-b-navy border-b-2 font-medium outline-transparent'
                                         : 'text-grey'
                                 )
                             }>
@@ -57,7 +57,7 @@ const order = () => {
                                 classNames(
                                     '',
                                     selected
-                                        ? 'border-b-navy border-b-4 font-medium'
+                                        ? 'border-b-navy border-b-2 font-medium outline-transparent'
                                         : 'text-grey'
                                 )
                             }>
