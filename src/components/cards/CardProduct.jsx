@@ -1,4 +1,5 @@
 import { Menu } from '@headlessui/react'
+import Link from 'next/link'
 
 const CardProduct = ({title, price, imageProduct}) => {
     // console.log(title)
@@ -78,22 +79,22 @@ const CardProduct = ({title, price, imageProduct}) => {
                         <div className="border rounded-full border-navy" ></div>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
+                                <Link
                                     className={`${active && 'text-gray-400'}`}
                                     href="/wishlist"
                                 >
                                     Masukkan Wishlist
-                                </a>
+                                </Link>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
+                                <Link
                                     className={`${active && 'text-gray-400 '}`}
-                                    href="serupa"
+                                    href="/serupa"
                                 >
                                     Produk Serupa
-                                </a>
+                                </Link>
                             )}
                         </Menu.Item>
                     </Menu.Items>

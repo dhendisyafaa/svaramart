@@ -2,6 +2,7 @@ import { Menu } from '@headlessui/react'
 import Image from 'next/image'
 import React from 'react'
 import photoProduct from '../../../public/images/product/img-product.png'
+import Link from 'next/link'
 
 const CardPromo = () => {
     return (
@@ -84,22 +85,22 @@ const CardPromo = () => {
                         <div className="border rounded-full border-navy" ></div>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
+                                <Link
                                     className={`${active && 'text-gray-400'}`}
                                     href="/wishlist"
                                 >
                                     Masukkan Wishlist
-                                </a>
+                                </Link>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
+                                <Link
                                     className={`${active && 'text-gray-400 '}`}
                                     href="serupa"
                                 >
                                     Produk Serupa
-                                </a>
+                                </Link>
                             )}
                         </Menu.Item>
                     </Menu.Items>
