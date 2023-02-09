@@ -5,6 +5,8 @@ import Image from 'next/image'
 import avatar from '../../public/images/icon/avatar.png'
 import logoPromo from '../../public/images/icon/logo promo.png'
 import classNames from 'classnames'
+import ButtonSmall from '@/components/button/ButtonSmall'
+import RiwayatTransaksi from '@/components/RiwayatTransaksi'
 
 const order = () => {
     return (
@@ -53,7 +55,7 @@ const order = () => {
                             }>
                                 <p>Pesanan</p>
                             </Tab>
-                            <Tab  className={({ selected }) =>
+                            <Tab className={({ selected }) =>
                                 classNames(
                                     '',
                                     selected
@@ -103,7 +105,12 @@ const order = () => {
                                 </div>
                             </Tab.Panel>
                             <Tab.Panel>
-                                <p>tab 2</p>
+                                <div className='flex flex-col gap-5'>
+                                    <RiwayatTransaksi/>
+                                    <RiwayatTransaksi/>
+                                    <RiwayatTransaksi/>
+                                    <RiwayatTransaksi/>
+                                </div>
                             </Tab.Panel>
 
                         </Tab.Panels>
