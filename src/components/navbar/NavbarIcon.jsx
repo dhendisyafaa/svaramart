@@ -49,6 +49,25 @@ export const PromoIcon = ({ href, navbarName, selected }) => {
     )
 }
 
+export const WishlistIcon = ({ href, navbarName, selected }) => {
+    return (
+        <Link href={href} className={`items-center flex flex-col ${selected ? 'text-navy font-semibold' : ''}`}>
+            <svg width={24} height={21} fill="none">
+                <path
+                    d="M21.095 2.679a5.728 5.728 0 00-8.104 0l-1.104 1.104-1.104-1.104a5.73 5.73 0 10-8.105 8.104l1.105 1.104 8.104 8.104 8.104-8.104 1.104-1.104a5.73 5.73 0 000-8.104z"
+                    stroke={`${selected ? '#1F3C42' : '#848484 '}`}
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            </svg>
+            <p className='text-xs'>
+                {navbarName}
+            </p>
+        </Link>
+
+    )
+}
 export const OrderIcon = ({ href, navbarName, selected }) => {
     return (
         <Link href={href} className={`items-center flex flex-col ${selected ? 'text-navy font-semibold' : ''}`}>
@@ -69,25 +88,6 @@ export const OrderIcon = ({ href, navbarName, selected }) => {
                 <path
                     d="M3.934 6.67l8.366 4.84 8.366-4.84M12.3 21.16V11.5"
                     stroke={`${selected ? '#1F3C42' : '#848484 '}`}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-            </svg>
-            <p className='text-xs'>
-                {navbarName}
-            </p>
-        </Link>
-
-    )
-}
-export const ChatIcon = ({ href, navbarName, selected }) => {
-    return (
-        <Link href={href} className={`items-center flex flex-col ${selected ? 'text-navy font-semibold' : ''}`}>
-            <svg width={23} height={23} fill="none">
-                <path
-                    d="M20.125 14.375a1.917 1.917 0 01-1.917 1.917h-11.5l-3.833 3.833V4.792a1.917 1.917 0 011.917-1.917h13.416a1.916 1.916 0 011.917 1.917v9.583z"
-                    stroke={`${selected ? '#1F3C42' : '#848484 '}`}
-                    strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />
