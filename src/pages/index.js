@@ -47,7 +47,7 @@ export default function Home() {
           <div className='flex gap-4 items-center mb-5 lg:hidden'>
             <SearchBar />
             <div className='flex items-center gap-3'>
-              <ChatIcon color="#1F3C42" />
+              {/* <ChatIcon color="#1F3C42" /> */}
               <BagIcon color="#1F3C42" />
             </div>
           </div>
