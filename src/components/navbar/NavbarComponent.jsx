@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
-import React from 'react'
-import {BerandaIcon, ChatIcon, OrderIcon, PromoIcon, WishlistIcon } from './NavbarIcon';
+import { BerandaIcon, OrderIcon, PromoIcon, WishlistIcon } from './NavbarIcon';
 
 const NavbarComponent = () => {
   const router = useRouter();
@@ -10,7 +9,7 @@ const NavbarComponent = () => {
       <BerandaIcon navbarName={'Beranda'} href={'/'} selected={router.pathname === '/' ? true : false} />
       <PromoIcon navbarName={'Promo'} href={'/promo'} selected={router.pathname === '/promo' ? true : false} />
       <WishlistIcon navbarName={'Wishlist'} href={'/wishlist'} selected={router.pathname === '/wishlist' ? true : false} />
-      <OrderIcon navbarName={'Order'} href={'/order'}  selected={router.pathname === '/order' ? true : false} />
+      <OrderIcon navbarName={'Order'} href={'/order'} selected={router.pathname === '/order' ? true : false} />
     </div>
   )
 }

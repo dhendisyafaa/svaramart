@@ -1,18 +1,16 @@
 import CategoryComponent from '@/components/CategoryComponent'
-import Layout from '@/components/Layout'
 import SearchBar from '@/components/SearchBar'
 import ButtonSmall from '@/components/button/ButtonSmall'
 import CardProduct from '@/components/cards/CardProduct'
 import CarouselComponent from '@/components/carousel/CarouselComponent'
+import DefaultHeader from '@/components/header/DefaultHeader'
+import LargeScreenHeader from '@/components/header/LargeScreenHeader'
 import BagIcon from '@/components/icon/BagIcon'
+import ChatIcon from '@/components/icon/ChatIcon'
+import NavbarComponent from '@/components/navbar/NavbarComponent'
 import { Inter } from '@next/font/google'
 import { useEffect, useState } from 'react'
 import { getAllProduct } from './api/product'
-import DefaultHeader from '@/components/header/DefaultHeader'
-import NavbarComponent from '@/components/navbar/NavbarComponent'
-import LargeScreenHeader from '@/components/header/LargeScreenHeader'
-import { WishlistIcon } from '@/components/navbar/NavbarIcon'
-import ChatIcon from '@/components/icon/ChatIcon'
 
 const inter = Inter({ subsets: ['latin'] })
 
