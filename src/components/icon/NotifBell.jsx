@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 const NotifBell = () => {
     return (
-        <>
+        <Link href='/notification'>
             <svg
                 width={25}
                 height={25}
@@ -17,7 +18,7 @@ const NotifBell = () => {
                     strokeLinejoin="round"
                 />
             </svg>
-        </>
+        </Link>
     )
 }
 

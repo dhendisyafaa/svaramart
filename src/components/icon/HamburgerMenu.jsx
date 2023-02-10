@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 const HamburgerMenu = () => {
     return (
-        <>
+        <Link href='/settings'>
             <svg
                 width={35}
                 height={35}
@@ -17,7 +18,7 @@ const HamburgerMenu = () => {
                     strokeLinejoin="round"
                 />
             </svg>
-        </>
+        </Link>
     )
 }
 

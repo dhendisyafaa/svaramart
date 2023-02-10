@@ -9,12 +9,8 @@ const DefaultHeader = () => {
     <div className='flex justify-between bg-navy px-5 py-4'>
       <SvaraMartText />
       <div className='flex items-center gap-1'>
-        <Link href='/notification'>
-          <NotifBell />
-        </Link>
-        <Link href='/settings'>
-          <HamburgerMenu />
-        </Link>
+        <NotifBell />
+        <HamburgerMenu />
       </div>
     </div>
   )

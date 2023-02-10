@@ -20,7 +20,7 @@ const RiwayatTransaksi = () => {
             <div className="flex justify-between items-center mt-1">
                 <p className='text-sm font-semibold'>Rp 50.000</p>
                 <ButtonSmall
-                    innerText="Lacak" />
+                    innerText="Lacak" href="/"/>
             </div>
 
         </div>
