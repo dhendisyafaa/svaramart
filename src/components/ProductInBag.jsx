@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import imgProduct from '../../public/images/product/img-product.png'
 
-const ProdukKeranjang = () => {
+const ProductInBag = () => {
     return (
         <div className="flex gap-2 py-2">
             <input type="checkbox" name="" id="" />
@@ -18,13 +18,9 @@ const ProdukKeranjang = () => {
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-4'>
                         <div className="flex items-center gap-3">
-                            <button className='border rounded-sm text-[10px] border-navy px-1'>-</button>
+                            <button className='border rounded-sm text-[10px] border-navy px-1 font-bold text-navy'>-</button>
                             <p className='text-[10px]'>1</p>
-                            <button className='border rounded-sm text-[10px] border-navy px-1'>+</button>
-
-                            {/* <button className='border-navy border-2 w-5 rounded-md'>-</button>
-                            <p>1</p>
-                            <button className='border-navy border-2 w-5 rounded-md'>+</button> */}
+                            <button className='border rounded-sm text-[10px] border-navy px-1 font-bold text-navy'>+</button>
                         </div>
                         <div>
                             <svg width={18} height={15} fill="none">
@@ -52,4 +48,4 @@ const ProdukKeranjang = () => {
     )
 }
 
-export default ProdukKeranjang
+export default ProductInBag
