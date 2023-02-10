@@ -1,12 +1,11 @@
+import RiwayatTransaksi from '@/components/RiwayatTransaksi'
 import HamburgerMenu from '@/components/icon/HamburgerMenu'
 import NavbarComponent from '@/components/navbar/NavbarComponent'
 import { Tab } from '@headlessui/react'
+import classNames from 'classnames'
 import Image from 'next/image'
 import avatar from '../../public/images/icon/avatar.png'
 import logoPromo from '../../public/images/icon/logo promo.png'
-import classNames from 'classnames'
-import ButtonSmall from '@/components/button/ButtonSmall'
-import RiwayatTransaksi from '@/components/RiwayatTransaksi'
 
 const order = () => {
     return (

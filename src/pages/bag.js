@@ -1,14 +1,13 @@
-import SimpleHeader from "@/components/header/SimpleHeader"
+import BackHeader from "@/components/header/BackHeader"
 
 const bag = () => {
     return (
         <>
-            <SimpleHeader
-                titleHeader="Bag"
-            />
-            <div className='h-[70vh] flex justify-center items-center'>
-                <p>COMMING SOON!</p>
-            </div>
+            <BackHeader titleHeader="Bag">
+                <div className='h-[70vh] flex justify-center items-center'>
+                    <p>COMMING SOON!</p>
+                </div>
+            </BackHeader>
         </>
     )
 }
