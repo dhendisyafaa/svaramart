@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from '../styles/SearchBar.module.css'
+import Link from 'next/link'
 
-const SearchBar = () => {
+const SearchBar = (props) => {
     return (
-        <div className={styles.searchbar}>
-            <form action="#">
-                <input className={styles.input} type="search" placeholder='Sepatu Sekolah' />
-            </form>
-        </div>
+        <Link href='/search'>
+            <div className={styles.searchbar}>
+                <form action="#">
+                    <input className={styles.input} type="search" placeholder={props.placeholder} />
+                </form>
+            </div>
+        </Link>
     )
 }
 

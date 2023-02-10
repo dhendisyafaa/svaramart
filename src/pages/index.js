@@ -1,5 +1,4 @@
 import CategoryComponent from '@/components/CategoryComponent'
-import SearchBar from '@/components/SearchBar'
 import ButtonSmall from '@/components/button/ButtonSmall'
 import CardProduct from '@/components/cards/CardProduct'
 import CarouselComponent from '@/components/carousel/CarouselComponent'
@@ -9,8 +8,10 @@ import BagIcon from '@/components/icon/BagIcon'
 import ChatIcon from '@/components/icon/ChatIcon'
 import NavbarComponent from '@/components/navbar/NavbarComponent'
 import { Inter } from '@next/font/google'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { getAllProduct } from './api/product'
+import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,7 +46,11 @@ export default function Home() {
       <div className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
         <div className='h-[1500px]'>
           <div className='flex gap-4 items-center mb-5 lg:hidden'>
-            <SearchBar />
+            <Link href='/search' className='w-full'>
+              <form action="#">
+                <input className={styles.input} type="search" placeholder='Sepatu Ventela' disabled />
+              </form>
+            </Link>
             <div className='flex items-center gap-3'>
               <ChatIcon color="#1F3C42" />
               <BagIcon color="#1F3C42" />

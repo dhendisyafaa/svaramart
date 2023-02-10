@@ -16,3 +16,8 @@
     font-size: 12px;
     color: #8e8e8e;
 }
+
+.input:focus{
+    height: 35px;
+    outline: transparent;
+}
