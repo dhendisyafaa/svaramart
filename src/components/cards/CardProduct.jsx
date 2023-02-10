@@ -2,10 +2,10 @@ import { Menu } from '@headlessui/react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
-const CardProduct = ({title, price, imageProduct, styleName}) => {
+const CardProduct = ({ title, price, imageProduct, styleName }) => {
     // console.log(title)
     return (
-        <div className={classNames('relative lg:w-[15vw] shadow lg:shadow-md rounded-lg grid grid-rows-[50%_auto]', styleName)}>
+        <div className={classNames('relative max-h-72 pb-3 lg:w-[15vw] shadow lg:shadow-md rounded-lg grid grid-rows-[50%_auto] border', styleName)}>
             <div>
                 <img
                     src={imageProduct}
@@ -14,14 +14,14 @@ const CardProduct = ({title, price, imageProduct, styleName}) => {
                     className='h-full w-full lg:w-50 lg:h-50 rounded-t-lg'
                 />
             </div>
-            <div className='py-[10px] px-2 w-36 flex flex-col gap-5'>
+            <div className='py-[10px] px-2 w-36 flex flex-col justify-between'>
                 <div className='flex flex-col'>
                     <div className='mb-1'>
                         <p className='text-[10px] leading-3'>{title}</p>
                     </div>
-                    <p className='font-bold text-xs'>Rp{(price*15000).toLocaleString()}</p>
+                    <p className='font-bold text-xs'>Rp{(price * 15000).toLocaleString()}</p>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-1'>
                     <div className='flex items-center gap-1'>
                         <svg width={10} height={10} fill="none">
                             <g
@@ -67,39 +67,39 @@ const CardProduct = ({title, price, imageProduct, styleName}) => {
                         <p className='text-[10px] text-grey'>Terjual 15rb</p>
                     </div>
                 </div>
-                <Menu>
-                    <Menu.Button className="absolute bottom-2 right-2">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 8.125C7.84518 8.125 8.125 7.84518 8.125 7.5C8.125 7.15482 7.84518 6.875 7.5 6.875C7.15482 6.875 6.875 7.15482 6.875 7.5C6.875 7.84518 7.15482 8.125 7.5 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M11.875 8.125C12.2202 8.125 12.5 7.84518 12.5 7.5C12.5 7.15482 12.2202 6.875 11.875 6.875C11.5298 6.875 11.25 7.15482 11.25 7.5C11.25 7.84518 11.5298 8.125 11.875 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M3.125 8.125C3.47018 8.125 3.75 7.84518 3.75 7.5C3.75 7.15482 3.47018 6.875 3.125 6.875C2.77982 6.875 2.5 7.15482 2.5 7.5C2.5 7.84518 2.77982 8.125 3.125 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </Menu.Button>
-                    <Menu.Items className="bg-white rounded-t-xl fixed bottom-0 z-50 left-0 w-full h-[20%] border flex flex-col gap-3 px-3 py-6 font-light text-xs shadow-[2px_0px_20px_0px_rgba(0,0,0,0.25)]">
-                        <div className="border rounded-full border-navy" ></div>
-                        <Menu.Item>
-                            {({ active }) => (
-                                <Link
-                                    className={`${active && 'text-gray-400'}`}
-                                    href="/wishlist"
-                                >
-                                    Masukkan Wishlist
-                                </Link>
-                            )}
-                        </Menu.Item>
-                        <Menu.Item>
-                            {({ active }) => (
-                                <Link
-                                    className={`${active && 'text-gray-400 '}`}
-                                    href="/serupa"
-                                >
-                                    Produk Serupa
-                                </Link>
-                            )}
-                        </Menu.Item>
-                    </Menu.Items>
-                </Menu>
             </div>
+            <Menu>
+                <Menu.Button className="absolute bottom-2 right-2">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 8.125C7.84518 8.125 8.125 7.84518 8.125 7.5C8.125 7.15482 7.84518 6.875 7.5 6.875C7.15482 6.875 6.875 7.15482 6.875 7.5C6.875 7.84518 7.15482 8.125 7.5 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M11.875 8.125C12.2202 8.125 12.5 7.84518 12.5 7.5C12.5 7.15482 12.2202 6.875 11.875 6.875C11.5298 6.875 11.25 7.15482 11.25 7.5C11.25 7.84518 11.5298 8.125 11.875 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3.125 8.125C3.47018 8.125 3.75 7.84518 3.75 7.5C3.75 7.15482 3.47018 6.875 3.125 6.875C2.77982 6.875 2.5 7.15482 2.5 7.5C2.5 7.84518 2.77982 8.125 3.125 8.125Z" stroke="black" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </Menu.Button>
+                <Menu.Items className="bg-white rounded-t-xl fixed bottom-0 z-50 left-0 w-full h-[20%] border flex flex-col gap-3 px-3 py-6 font-light text-xs shadow-[2px_0px_20px_0px_rgba(0,0,0,0.25)]">
+                    <div className="border rounded-full border-navy" ></div>
+                    <Menu.Item>
+                        {({ active }) => (
+                            <Link
+                                className={`${active && 'text-gray-400'}`}
+                                href="/wishlist"
+                            >
+                                Masukkan Wishlist
+                            </Link>
+                        )}
+                    </Menu.Item>
+                    <Menu.Item>
+                        {({ active }) => (
+                            <Link
+                                className={`${active && 'text-gray-400 '}`}
+                                href="/serupa"
+                            >
+                                Produk Serupa
+                            </Link>
+                        )}
+                    </Menu.Item>
+                </Menu.Items>
+            </Menu>
         </div>
     )
 }
