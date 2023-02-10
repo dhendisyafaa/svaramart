@@ -8,8 +8,7 @@ const CardProduct = ({title, price, imageProduct}) => {
             <div>
                 <img
                     src={imageProduct}
-                    width={36}
-                    height={36}
+                    loading='lazy'
                     alt='photo-product'
                     className='w-36 h-36 lg:w-50 lg:h-50 rounded-t-lg'
                 />
