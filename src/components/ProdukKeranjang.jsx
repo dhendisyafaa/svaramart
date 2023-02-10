@@ -12,15 +12,19 @@ const ProdukKeranjang = () => {
             />
             <div className="flex flex-col gap-2 w-full">
                 <div className=''>
-                    <p className='font-normal text-base leading-4'>Harry Potter and the Prisoner of Azkaban</p>
-                    <p className='font-bold text-md'>Rp 185.999</p>
+                    <p className='font-normal text-[12px] leading-3'>Harry Potter and the Prisoner of Azkaban</p>
+                    <p className='font-bold text-xs'>Rp 185.999</p>
                 </div>
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-4'>
                         <div className="flex items-center gap-3">
-                            <button className='border-navy border-2 w-5 rounded-md'>-</button>
+                            <button className='border rounded-sm text-[10px] border-navy px-1'>-</button>
+                            <p className='text-[10px]'>1</p>
+                            <button className='border rounded-sm text-[10px] border-navy px-1'>+</button>
+
+                            {/* <button className='border-navy border-2 w-5 rounded-md'>-</button>
                             <p>1</p>
-                            <button className='border-navy border-2 w-5 rounded-md'>+</button>
+                            <button className='border-navy border-2 w-5 rounded-md'>+</button> */}
                         </div>
                         <div>
                             <svg width={18} height={15} fill="none">
