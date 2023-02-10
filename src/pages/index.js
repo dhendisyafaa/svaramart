@@ -72,9 +72,9 @@ export default function Home() {
           </div>
           <div className='flex items-center justify-between'>
             <p className='font-semibold text-sm'>Produk di sekitarmu!</p>
-            <ButtonSmall innerText="Lihat Semua" />
+            <ButtonSmall href="/viewall" innerText="Lihat Semua" />
           </div>
-          <div className='flex gap-1 lg:gap-2 overflow-x-scroll scrollbar-hide py-3 px-1 mb-8'>
+          <div className='flex flex-wrap justify-center gap-x-2 gap-y-2'>
             {allProduct.map((product, id) => {
               return (
                 <CardProduct
