@@ -1,13 +1,19 @@
-import Layout from '@/components/Layout'
-import React from 'react'
+import ChatItem from '@/components/ChatItem'
+import SearchBar from '@/components/SearchBar'
+import BackHeader from '@/components/header/BackHeader'
 
 const chat = () => {
     return (
-        <Layout>
-            <div className='h-[70vh] flex justify-center items-center'>
-                <p>COMMING SOON!</p>
+        <>
+            <BackHeader titleHeader="Chat" />
+            <div className='px-3 mt-3'>
+                <ChatItem/>
+                <ChatItem/>
+                <ChatItem/>
+                <ChatItem/>
+                <ChatItem/>
             </div>
-        </Layout>
+        </>
     )
 }
 
