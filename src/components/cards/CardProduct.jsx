@@ -1,16 +1,17 @@
 import { Menu } from '@headlessui/react'
+import classNames from 'classnames'
 import Link from 'next/link'
 
-const CardProduct = ({title, price, imageProduct}) => {
+const CardProduct = ({title, price, imageProduct, styleName}) => {
     // console.log(title)
     return (
-        <div className='relative w-fit lg:w-[15vw] shadow lg:shadow-md rounded-lg'>
+        <div className={classNames('relative lg:w-[15vw] shadow lg:shadow-md rounded-lg grid grid-rows-[50%_auto]', styleName)}>
             <div>
                 <img
                     src={imageProduct}
                     loading='lazy'
                     alt='photo-product'
-                    className='w-36 h-36 lg:w-50 lg:h-50 rounded-t-lg'
+                    className='h-full w-full lg:w-50 lg:h-50 rounded-t-lg'
                 />
             </div>
             <div className='py-[10px] px-2 w-36 flex flex-col gap-5'>
