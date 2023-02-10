@@ -74,7 +74,7 @@ export default function Home() {
             <p className='font-semibold text-sm'>Produk di sekitarmu!</p>
             <ButtonSmall href="/viewall" innerText="Lihat Semua" />
           </div>
-          <div className='grid grid-cols-2 justify-center gap-x-2 gap-y-2'>
+          <div className='grid grid-cols-2 justify-center gap-x-2 gap-y-2 mt-4'>
             {allProduct.map((product, id) => {
               return (
                 <CardProduct
