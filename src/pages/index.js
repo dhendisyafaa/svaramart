@@ -78,7 +78,7 @@ export default function Home() {
             {allProduct.map((product, id) => {
               return (
                 <CardProduct
-                  styleName='w-40'
+                  styleName='max-w-44'
                   key={id}
                   title={product.title}
                   price={product.price}
