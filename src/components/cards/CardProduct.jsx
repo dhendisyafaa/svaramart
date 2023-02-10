@@ -11,7 +11,7 @@ const CardProduct = ({ title, price, imageProduct, styleName }) => {
                     src={imageProduct}
                     loading='lazy'
                     alt='photo-product'
-                    className='h-full w-full lg:w-50 lg:h-50 rounded-t-lg'
+                    className='h-full w-full object-contain lg:w-50 lg:h-50 rounded-t-lg'
                 />
             </div>
             <div className='py-[10px] px-2 w-36 flex flex-col justify-between'>
