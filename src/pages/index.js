@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <motion.div
         animate={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 600 }}
+        initial={{ opacity: 0, y: 800 }}
         transition={{
           duration: 1,
           delay: 0.3,
