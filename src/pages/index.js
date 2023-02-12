@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { getAllProduct } from './api/product'
 import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,7 +44,14 @@ export default function Home() {
       <div className='hidden lg:block'>
         <LargeScreenHeader />
       </div>
-      <div className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
+      <motion.div
+        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 200 }}
+        transition={{
+          duration: 1,
+          delay: 0.3,
+        }}
+        className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
         <div className='h-[1500px]'>
           <div className='flex gap-4 items-center mb-5 lg:hidden'>
             <Link href='/search' className='w-full'>
@@ -94,7 +102,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
       <NavbarComponent />
     </div>
   )
