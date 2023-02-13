@@ -12,7 +12,7 @@ import photoProduct from '../../public/images/product/img-product.png'
 const detail = () => {
   return (
     <div className='h-[2000px]'>
-      <BackHeader titleHeader="" styleName='' />
+      <BackHeader titleHeader="" styleName='py-[5px]' />
       <div>
         <div className=''>
           <Image src={photoProduct} alt="" className='w-full h-full' />
@@ -55,7 +55,7 @@ const detail = () => {
                     <span>Deskripsi Produk</span>
                     <ChevronUpIcon
                       className={`${open ? 'rotate-180 transform' : ''
-                        } h-5 w-5 text-purple-500`}
+                        } h-5 w-5 text-navy`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
@@ -70,13 +70,12 @@ const detail = () => {
         <div className='flex flex-col shadow-md mx-4 rounded-lg py-4 px-5 mt-4'>
           <div className='flex flex-col gap-4'>
             <p className='font-medium text-md text-navy'>Informasi Toko</p>
-            <div className='flex items-center gap-2'>
-              <Image src={avatar} alt="avatar toko" />
-              <p>Lorem ipsum dolor sit </p>
-            </div>
-            <div className='grid grid-cols-2 gap-1 justify-center'>
-              <button type="" className='bg-navy text-white py-1 rounded-lg'>Ikuti</button>
-              <button type="" className='border-navy border rounded-lg text-navy py-1'>Chat Seller</button>
+            <div className='flex items-center justify-between'>
+              <div className='flex gap-2 items-center'>
+                <Image src={avatar} alt="avatar toko" />
+                <p className='text-sm'>Lorem ipsum dolor sit </p>
+              </div>
+              <button type="" className='bg-navy text-white py-[3px] px-4 rounded-md text-[10px]'>Ikuti</button>
             </div>
           </div>
           <div className='mt-5'>
@@ -131,7 +130,7 @@ const detail = () => {
               <div className='flex justify-between'>
                 <p className='font-semibold text-sm text-navy'>Ulasan</p>
                 <Link href='/'>
-                  <p className='text-gray text-[10px]'>Lihat Semua</p>
+                  <p className='text-gray text-[10px]'>Lihat Semua &gt;</p>
                 </Link>
               </div>
               <div className='flex items-center gap-1 mt-2'>
