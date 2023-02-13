@@ -41,7 +41,7 @@ const detail = () => {
               </defs>
             </svg>
             <p className='text-[12px] font-bold'>4.9</p>
-            <p className='text-[12px] text-grey'>(789)</p>
+            <p className='text-[12px] text-grey'>789</p>
             <span className='text-[12px] text-grey'>|</span>
             <p className='text-[12px] text-grey'>Terjual 15rb</p>
           </div>
