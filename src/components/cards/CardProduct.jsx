@@ -6,7 +6,7 @@ const CardProduct = ({ title, price, imageProduct, styleName }) => {
     // console.log(title)
     return (
         <Link href='/detail'>
-            <div className={classNames('relative max-h-72 pb-3 lg:w-[15vw] shadow lg:shadow-md rounded-lg grid grid-rows-[50%_auto] border', styleName)}>
+            <div className={classNames('relative h-72 pb-3 lg:w-[15vw] shadow lg:shadow-md rounded-lg grid grid-rows-[50%_auto] border', styleName)}>
                 <div>
                     <img
                         src={imageProduct}
