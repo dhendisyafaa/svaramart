@@ -5,7 +5,7 @@ import BackHeader from '@/components/header/BackHeader'
 const chat = () => {
     return (
         <>
-            <BackHeader titleHeader="Chat" />
+            <BackHeader titleHeader="Chat" styleName="hidden"/>
             <div className='px-3 mt-3'>
                 <ChatItem/>
                 <ChatItem/>

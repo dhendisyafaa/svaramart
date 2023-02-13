@@ -1,21 +1,30 @@
 import Link from 'next/link'
 import React from 'react'
+import BagIcon from '../icon/BagIcon'
+import HamburgerMenu from '../icon/HamburgerMenu'
+import classNames from 'classnames'
 
-const BackHeader = (props) => {
+const BackHeader = ({titleHeader, styleName}) => {
     return (
-        <div className='bg-navy px-5 py-4 flex items-center gap-2'>
-            <Link href='/'>
-                <svg width={24} height={24} fill="none">
-                    <path
-                        d="M19 12H5M12 19l-7-7 7-7"
-                        stroke="#fff"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-            </Link>
-            <p className='text-white font-medium text-md'>{props.titleHeader}</p>
+        <div className='bg-navy px-3 py-4 flex items-center justify-between'>
+            <div className='flex gap-2 items-center'>
+                <Link href='/'>
+                    <svg width={24} height={24} fill="none">
+                        <path
+                            d="M19 12H5M12 19l-7-7 7-7"
+                            stroke="#fff"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                    </svg>
+                </Link>
+                <p className='text-white font-medium text-md'>{titleHeader}</p>
+            </div>
+            <div className={classNames('flex items-center gap-1', styleName)}>
+                <BagIcon color="#fff"/>
+                <HamburgerMenu/>
+            </div>
         </div>
     )
 }

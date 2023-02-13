@@ -5,7 +5,7 @@ import Link from "next/link"
 const bag = () => {
     return (
         <div className="h-[1700px]">
-            <BackHeader titleHeader='Bag' />
+            <BackHeader titleHeader='Bag' styleName="hidden"/>
             <ItemBag />
             <ItemBag />
             <ItemBag />
