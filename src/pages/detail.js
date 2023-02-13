@@ -12,7 +12,7 @@ import photoProduct from '../../public/images/product/img-product.png'
 const detail = () => {
   return (
     <div className='h-[2000px]'>
-      <BackHeader titleHeader="" styleName='py-[3px]' />
+      <BackHeader titleHeader="" styleName='py-[1px]' />
       <div>
         <div className=''>
           <Image src={photoProduct} alt="" className='w-full h-full' />
