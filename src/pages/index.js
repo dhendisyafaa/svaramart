@@ -45,11 +45,12 @@ export default function Home() {
         <LargeScreenHeader />
       </div>
       <motion.div
+        viewport={{ once: true }}
         animate={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 800 }}
+        initial={{ opacity: 0.5, y: 80 }}
         transition={{
-          duration: 1,
-          delay: 0.3,
+          duration: 0.5,
+          delay: 0,
         }}
         className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
         <div className='h-[1500px]'>
