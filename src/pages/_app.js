@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="description" content="Online Shop" />
         <meta name="keywords" content="Online Shop" />
-        <title>SvaraMart</title>
+        <title>Svara Mart</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
