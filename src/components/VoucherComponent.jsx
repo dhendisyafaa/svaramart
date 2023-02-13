@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const VoucherComponent = () => {
     return (
-        <div className='flex justify-between items-center pr-5 border lg:w-[25vw]'>
+        <div className='flex w-full justify-between items-center pr-5 border lg:w-[25vw]'>
             <div className='flex gap-3 items-center'>
                 <Image
                     src={gratong}
