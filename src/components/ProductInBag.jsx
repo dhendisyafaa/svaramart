@@ -10,7 +10,7 @@ const ProductInBag = () => {
                 src={imgProduct}
                 className="rounded-lg ml-2 w-20 h-20"
             />
-            <div className="flex flex-col gap-2 w-full">
+            <div className="flex flex-col justify-between gap-2 w-full">
                 <div className=''>
                     <p className='font-normal text-[12px] leading-3'>Harry Potter and the Prisoner of Azkaban</p>
                     <p className='font-bold text-xs'>Rp 185.999</p>
