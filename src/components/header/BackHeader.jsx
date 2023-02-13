@@ -6,7 +6,7 @@ import classNames from 'classnames'
 
 const BackHeader = ({titleHeader, styleName}) => {
     return (
-        <div className='bg-navy px-3 py-4 flex items-center justify-between'>
+        <div className={classNames('bg-navy px-3 py-4 flex items-center justify-between', styleName)}>
             <div className='flex gap-2 items-center'>
                 <Link href='/'>
                     <svg width={24} height={24} fill="none">
