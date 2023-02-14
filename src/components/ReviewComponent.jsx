@@ -6,7 +6,7 @@ const ReviewComponent = () => {
     return (
         <div className='shadow-md p-3 rounded-lg mb-3'>
             <Image src={starRating} alt="star rating" width={80}/>
-            <p className='text-[10px] leading-3 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis natus ea earum unde iusto laborum accusamus ratione aspernatur mollitia.</p>
+            <p className='text-sm leading-4 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis natus ea earum unde iusto laborum accusamus ratione aspernatur mollitia.</p>
             <div className='flex gap-1 mt-2'>
                 <Image src={photoProduct} alt="photo product buyer" width={40} height={40} className='rounded-lg' />
                 <Image src={photoProduct} alt="photo product buyer" width={40} height={40} className='rounded-lg' />
