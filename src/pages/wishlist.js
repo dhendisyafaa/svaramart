@@ -10,7 +10,7 @@ const wishlist = () => {
     return (
         <>
             <SimpleHeader titleHeader='Wishlist' />
-            <div className=''>
+            <div className='px-5 lg:px-24'>
                 <Tab.Group>
                     <Tab.List className='p-5 gap-5 flex'>
                         <Tab className={({ selected }) =>
@@ -36,26 +36,23 @@ const wishlist = () => {
                     </Tab.List>
                     <Tab.Panels>
                         <Tab.Panel>
-                            <div className='px-5'>
-
-                                <div className='grid grid-cols-2 justify-center gap-x-2 gap-y-2'>
-                                    <CardProduct
-                                    //     styleName='max-w-44'
-                                    //     key={id}
-                                    //     title={product.title}
-                                    //     price={product.price}
-                                    //     imageProduct={product.image}
-                                    // // rating={product.rating.rate}
-                                    />
-                                    <CardProduct
-                                    //     styleName='max-w-44'
-                                    //     key={id}
-                                    //     title={product.title}
-                                    //     price={product.price}
-                                    //     imageProduct={product.image}
-                                    // // rating={product.rating.rate}
-                                    />
-                                </div>
+                            <div className='grid grid-cols-2 justify-center gap-x-2 gap-y-2'>
+                                <CardProduct
+                                //     styleName='max-w-44'
+                                //     key={id}
+                                //     title={product.title}
+                                //     price={product.price}
+                                //     imageProduct={product.image}
+                                // // rating={product.rating.rate}
+                                />
+                                <CardProduct
+                                //     styleName='max-w-44'
+                                //     key={id}
+                                //     title={product.title}
+                                //     price={product.price}
+                                //     imageProduct={product.image}
+                                // // rating={product.rating.rate}
+                                />
                             </div>
                         </Tab.Panel>
                         <Tab.Panel>

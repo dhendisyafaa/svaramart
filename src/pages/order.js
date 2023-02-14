@@ -11,10 +11,10 @@ const order = () => {
     return (
         <>
             <div className='bg-navy'>
-                <div className='w-full flex justify-end px-3 pt-3'>
+                <div className='w-full flex justify-end px-3 pt-3 lg:px-24'>
                     <HamburgerMenu />
                 </div>
-                <div className='flex items-center gap-2 px-5 pb-7'>
+                <div className='flex items-center gap-2 px-5 pb-7 lg:px-24'>
                     <Image
                         src={avatar} />
                     <div>
@@ -41,7 +41,7 @@ const order = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white rounded-t-3xl'>
+                <div className='bg-white rounded-t-3xl lg:px-24'>
                     <Tab.Group>
                         <Tab.List className="py-8 px-6 gap-8 flex">
                             <Tab className={({ selected }) =>
