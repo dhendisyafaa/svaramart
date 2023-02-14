@@ -9,6 +9,7 @@ import avatar from '../../public/images/icon/avatar.png'
 import photoProduct from '../../public/images/product/img-product.png'
 import BagIcon from '@/components/icon/BagIcon'
 import HamburgerMenu from '@/components/icon/HamburgerMenu'
+import ReadMore from '@/components/ReadMore'
 
 const detail = () => {
   return (
@@ -23,7 +24,7 @@ const detail = () => {
             <Image src={photoProduct} alt="photo product" className='w-full h-full lg:min-w-96 lg:min-h-96 object-cover' />
           </div>
           <div className=''>
-            <div className='px-3 py-3'>
+            <div className='ml-3 px-3 py-3'>
               <p className='font-medium text-md'>Harry Potter and the Prisoner of Azkaban</p>
               <p className='text-navy font-bold text-lg'>Rp 185.999</p>
               <div className='flex items-center gap-1 mt-2'>
@@ -61,34 +62,20 @@ const detail = () => {
               </div>
             </div>
             <div className="lg:hidden w-full px-1">
-              <div className="mx-auto w-full rounded-2xl bg-white p-2">
-                <Disclosure>
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex w-full justify-between rounded-lg bg-[#1f3c4216] px-4 py-2 text-left text-sm font-medium text-navy">
-                        <span>Deskripsi Produk</span>
-                        <ChevronUpIcon
-                          className={`${open ? 'rotate-180 transform' : ''
-                            } h-5 w-5 text-navy`}
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                        <p>
-                          If you&apos;re unhappy with your purchase for any reason, email us
-                          within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
-                          within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
-                          within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
-                          within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
-                          within 90 days and we&apos;ll refund you in full, no questions asked.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
+              <div className='shadow p-3 rounded-lg mt-3'>
+                <p className='text-navy font-semibold'>Deskripsi</p>
+                <ReadMore limit={200}>
+                  If you&apos;re unhappy with your purchase for any reason, email us
+                  within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+                  within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+                  within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+                  within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+                  within 90 days and we&apos;ll refund you in full, no questions asked.
+                </ReadMore>
               </div>
             </div>
           </div>
-          <div className='flex flex-col shadow-md mx-4 rounded-lg py-4 px-5 mt-4'>
+          <div className='flex flex-col shadow-md mx-4 rounded-lg h-fit py-4 px-5 mt-4'>
             <div className='flex flex-col gap-4'>
               <p className='font-medium text-md text-navy'>Informasi Toko</p>
               <div className='flex items-center justify-between'>
@@ -143,9 +130,16 @@ const detail = () => {
             </div> */}
           </div>
         </div>
-        <div className='hidden lg:block shadow-md mx-4 rounded-lg mt-4 p-3'>
-          <p className='font-medium text-md text-navy'>Deskripsi</p>
-          <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl. Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+        <div className='hidden lg:block shadow p-6 rounded-lg mt-3'>
+          <p className='text-navy font-semibold'>Deskripsi</p>
+          <p>
+            If you&apos;re unhappy with your purchase for any reason, email us
+            within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+            within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+            within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+            within 90 days and we&apos;ll refund you in full, no questions asked. If you&apos;re unhappy with your purchase for any reason, email us
+            within 90 days and we&apos;ll refund you in full, no questions asked.
+          </p>
         </div>
         <div className='flex flex-col shadow-md mx-4 rounded-lg mt-4'>
           <div>
@@ -193,11 +187,11 @@ const detail = () => {
 
       {/* nav large */}
       <div className='hidden fixed bottom-0 w-full py-3 lg:px-12 rounded-t-xl bg-white shadow-[0px_5px_10px_0px_rgba(0,0,0,1)] z-30 lg:flex justify-between'>
-        <div className='flex items-center gap-1'>
+        <div className='flex items-center gap-3'>
           <Image src={photoProduct} alt="photo prodict" width={50} height={50} className='rounded-lg' />
           <p>Harry Potter and the Prisoner of Azkaban</p>
         </div>
-        <div className='flex gap-3 items-center justify-around'>
+        <div className='flex gap-6 items-center justify-around'>
           <div className='flex gap-3 items-center'>
             <button className='border rounded-lg text-[15px] border-navy px-2 py-1 font-bold text-navy'>-</button>
             <p className='text-[15px]'>1</p>
