@@ -4,9 +4,9 @@ import BagIcon from '../icon/BagIcon'
 import HamburgerMenu from '../icon/HamburgerMenu'
 import classNames from 'classnames'
 
-const BackHeader = ({titleHeader, styleName}) => {
+const BackHeader = ({titleHeader, styleName, styleIcon}) => {
     return (
-        <div className={classNames('bg-navy px-3 py-4 flex items-center justify-between', styleName)}>
+        <div className={classNames('bg-navy px-3 lg:px-10 py-4 flex items-center justify-between', styleName)}>
             <div className='flex gap-2 items-center'>
                 <Link href='/'>
                     <svg width={24} height={24} fill="none">
@@ -21,7 +21,7 @@ const BackHeader = ({titleHeader, styleName}) => {
                 </Link>
                 <p className='text-white font-medium text-md'>{titleHeader}</p>
             </div>
-            <div className={classNames('flex items-center gap-1', styleName)}>
+            <div className={classNames('flex items-center gap-1', styleIcon)}>
                 <BagIcon color="#fff"/>
                 <HamburgerMenu/>
             </div>

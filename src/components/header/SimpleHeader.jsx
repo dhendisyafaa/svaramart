@@ -5,7 +5,7 @@ import HamburgerMenu from '../icon/HamburgerMenu'
 
 const SimpleHeader = (props) => {
   return (
-    <div className='bg-navy px-5 py-3 flex items-center justify-between'>
+    <div className='bg-navy px-5 lg:px-24 py-3 flex items-center justify-between'>
       <p className='text-white font-medium text-md'>{props.titleHeader}</p>
       <div className='flex items-center gap-2'>
         <NotifBell />
