@@ -52,8 +52,8 @@ export default function Home() {
           duration: 0.5,
           delay: 0,
         }}
-        className='px-5 py-5 lg:px-44 rounded-t-3xl bg-white mt-2'>
-        <div className='h-[1500px]'>
+        className='rounded-t-3xl bg-white'>
+        <div className='container mx-auto lg:px-24 px-5 py-6 h-[1500px]'>
           <div className='flex gap-4 items-center mb-5 lg:hidden'>
             <Link href='/search' className='w-full'>
               <form action="#">
