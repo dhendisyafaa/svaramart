@@ -7,9 +7,9 @@ import HamburgerMenu from '../icon/HamburgerMenu'
 
 const LargeScreenHeader = () => {
     return (
-        <div className='grid grid-cols-[50%_auto] items-center bg-navy px-20 py-4'>
+        <div className='flex py-4 container mx-auto px-24 justify-between'>
             <SvaraMartText />
-            <div className='flex gap-3 items-center px-4'>
+            <div className='flex gap-3 items-center'>
                 <SearchBar />
                 <BagIcon color="#fff" />
                 <ChatIcon color="#fff"/>
